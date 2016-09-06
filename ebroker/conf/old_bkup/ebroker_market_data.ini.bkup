@@ -1,0 +1,86 @@
+[DEFAULT]
+home_path = /home/kilimanjaro/marketdata/
+ebroker_bin_path = %(home_path)s/ebroker/bin
+ebroker_market_data_path = %(home_path)s/ebroker/data/raw/%(market_data_group_name)s
+ebroker_parsed_market_data_path = %(home_path)s/ebroker/data/parsed
+ebroker_market_data_filename_prefix = %(ebroker_market_data_path)s/%(market_data_group_name)s
+ebroker_parsed_market_data_filename_prefix = %(ebroker_parsed_market_data_path)s/%(market_data_group_name)s
+list_of_feedcodes_filename = %(home_path)s/ebroker/conf/%(market_data_group_name)s_feedcodes_list.txt
+morning_start_time = 085500
+morning_end_time = 120100
+afternoon_start_time = 120200
+afternoon_end_time = 162500
+afterhour_start_time = 165500
+afterhour_end_time = 230200
+
+[etf]
+market_data_group_name = etf
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
+
+[hsi_components]
+market_data_group_name = hsi_components
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
+
+[hhi_mch_future]
+market_data_group_name = hhi_mch_future
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[hsi_future]
+market_data_group_name = hsi_future
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[hsi_future_option]
+market_data_group_name = hsi_future_option
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[hsi_mhi_future]
+market_data_group_name = hsi_mhi_future
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[hsi_mhi_hhi_mch_future]
+market_data_group_name = hsi_mhi_hhi_mch_future
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[hsi_mhi_hhi_mch_chh_future]
+market_data_group_name = hsi_mhi_hhi_mch_chh_future
+ebroker_server_address = 10.0.0.70
+ebroker_server_port = 9002
+convert_extract_ebroker_gen_type = BidAskTradeOMS
+
+[stock_monitor]
+market_data_group_name = stock_monitor
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
+
+[warrant]
+market_data_group_name = warrant
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
+
+[stock_warrant_monitor]
+market_data_group_name = stock_warrant_monitor
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
+
+[hsif_cbbc]
+market_data_group_name = hsif_cbbc
+ebroker_server_address = 10.0.0.102
+ebroker_server_port = 9003
+convert_extract_ebroker_gen_type = BidAskTrade
